@@ -9,6 +9,9 @@
 #define EXIT_FAILURE 1
 #define EXIT_SUCCESS 0
 
+#define WINDOW_NAME "Window"
+#define NULL nullptr
+
 enum update_status
 {
 	UPDATE_CONTINUE = 1,

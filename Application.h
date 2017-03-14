@@ -4,7 +4,7 @@
 #include "Globals.h"
 #include "Module.h"
 
-#define NUM_MODULES 0
+#define NUM_MODULES 1
 
 class ModuleWindow;
 

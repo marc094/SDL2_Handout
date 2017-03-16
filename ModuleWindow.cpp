@@ -35,3 +35,17 @@ bool ModuleWindow::Init() {
 	}
 	return ret_val;
 }
+
+bool ModuleWindow::CleanUp() {
+	bool ret = true;
+	SDL_FreeSurface(_surface);
+	if (_surface != NULL) {
+		ret = false;
+	}
+	SDL_DestroyWindow(_window);
+	if (_window != NULL) {
+		ret = false;
+	}
+
+	return ret;
+}

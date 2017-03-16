@@ -8,13 +8,14 @@ class SDL_Surface;
 class ModuleWindow : public Module {
 private:
 	SDL_Window* _window;
+public:
 	SDL_Surface* _surface;
 public:
 	bool Init();
 	/*update_status PreUpdate();
 	update_status Update();
 	update_status PostUpdate();*/
-	bool CleanUp() { return true; };
+	bool CleanUp();
 };
 
 #endif // __ModuleWindow_H__
